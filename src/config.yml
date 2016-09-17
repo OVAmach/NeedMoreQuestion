@@ -1,0 +1,48 @@
+QuestionnaireList: 
+    default:
+        Settings:
+            QuestionAmount: 2
+            #出题数量
+            TestQuestionAmount: 2
+            #无序出题
+            RandomQuestion: true
+            #答题延迟，以秒位单位
+            Delay: 5
+            #完成所有答题将会有什么提示和执行什么指令，可用变量:%right%表示答对的数量,%wrong%表示答错的数量,%player%答题玩家id
+            CompleteTips: []
+            CompleteCommands: []
+            #当答错时如何处理，可选值:skip,skipall,repeat
+            IfHasWrong: skip
+            
+            
+        Questions:
+            q1:
+                QuestionTitle: 谁是你的爸爸
+                Questionid: tnt
+                RandomAnswer: true
+                MultiSelect: false
+                MultiSelectAmount: 1
+                Answerid: tnt
+                RightAnswer: 
+                    - 猴哥
+                WrongAnswer: 
+                    - 超哥
+                    - 曾哥
+                    - 妖刀
+                RightCommand: []
+                WrongCommand: []
+            q2:
+                QuestionTitle: 谁是你的儿子
+                Questionid: tnt
+                RandomAnswer: true
+                MultiSelectAmount: false
+                MultiCount: 1
+                Answerid: tnt
+                RightAnswer: 
+                    - 超哥
+                WrongAnswer: 
+                    - 猴哥
+                    - 隔壁家的儿子
+                    - 无子孙
+                RightCommand: []
+                WrongCommand: []

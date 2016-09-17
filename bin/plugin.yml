@@ -1,0 +1,16 @@
+name: NeedMoreQuestion
+main: com.iteamcn.NeedMoreQuestion.NeedMoreQuestion
+version: 1.0
+author: OVAmach
+command:
+    nmq: 
+        usage: '/nmq'
+        description: '显示NeedMoreQuestion指令'
+        permisson: 'nmq.admin' #使用权限.
+        permisson-message: 'You dont have this permisson'
+    question: 
+        usage: '/question [问卷名]'
+        description: '开始答题'
+    q:
+        usage: '/q [问卷名]'
+        description: '开始答题'
